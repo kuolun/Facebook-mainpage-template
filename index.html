@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Facebook</title>
+    <style type="text/css">
+    .frame {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .head {
+        background-color: #3A5795;
+        height: 82px;
+    }
+    
+    .main {}
+    
+    .box {
+        width: 490px;
+        float: left;
+        padding: 0px;
+        background-color: #3A5795;
+    }
+    
+    body {
+        margin: 0;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 13px;
+    }
+    
+    .fblogo {
+        position: relative;
+        width: 200px;
+        top: 15px;
+        left: -20px;
+    }
+    
+    .account {
+        background-color: #3A5795;
+        display: inline-block;
+        width: 150px;
+        color: white;
+        margin-top: 14px;
+        margin-left: 120px;
+        margin-right: 5px;
+    }
+    
+    .account input {
+        border: 1px solid #000;
+    }
+    
+    .pwd input {
+        border: 1px solid #000;
+    }
+    
+    .checkbox {
+        margin: 0;
+        margin-top: 3px;
+        margin-left: 20px;
+    }
+    
+    .pwd {
+        background-color: #3A5795;
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        color: white;
+        margin-top: 14px;
+        margin-right: 5px;
+    }
+    
+    .login {
+        background-color: #3A5795;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 31px;
+    }
+    
+    a:link {
+        color: #9DACCB;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .forget {
+        margin-top: 3px;
+    }
+    
+    table {
+        margin-top: 25px;
+    }
+    
+    .description {
+        font-size: 21px;
+        font-weight: bold;
+        color: #0e385f;
+        vertical-align: top
+    }
+    
+    .register {
+        font-size: 37px;
+        color: #141823;
+        font-weight: bold;
+    }
+    
+    .vtop {
+        vertical-align: top;
+    }
+    
+    .vmiddle {
+        vertical-align: middle;
+    }
+    
+    .across-banner {
+        position: absolute;
+        top: 0px;
+        background-color: #3A5795;
+        width: 100%;
+        height: 82px;
+        z-index: -1;
+    }
+    
+    .background {
+        position: absolute;
+        top: 72px;
+        background: linear-gradient(rgba(212, 217, 232, 0), rgba(212, 217, 232, 1));
+        width: 100%;
+        height: 628px;
+        z-index: -1;
+    }
+    
+    .lan ul {
+        padding-left: 0;
+    }
+    
+    .lan ul li {
+        display: inline-block;
+        margin: 5px 5px 0 0;
+        padding-left: 0;
+    }
+    
+    .form-group {
+        margin-right: 3px;
+        padding: 0;
+        margin-bottom: 3px;
+    }
+    
+    td {
+        height: 20px;
+    }
+    
+    .col-md-2 {
+        padding: 2px;
+    }
+    
+    .btn {
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .fanspage {
+        border-top: 1px solid #a0a9c0;
+        margin-top: 15px;
+        padding-top: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #666666;
+    }
+    
+    .otherlan {
+        width: 38px;
+        height: 17px;
+    }
+    
+    .otherlan a {
+        background-color: #e9eaed;
+        padding: 0px 2px 6px 2px;
+        position: relative;
+        bottom: 3px;
+    }
+    
+    .otherlan a:hover {
+        text-decoration: none;
+        background-color: #6D84B4;
+        color: #fff;
+    }
+    
+    #footer1 td {
+        padding: 2px 6px 5px 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="across-banner">
+    </div>
+    <div class="background"></div>
+    <div class="frame">
+        <div class="head">
+            <div class="box">
+                <img class="fblogo" src="images/fblogo.png" alt="">
+            </div>
+            <div class="box">
+                <div class="account">
+                    <span>電子郵件和電話</span>
+                    <input type="text" />
+                    <br>
+                    <div class="checkbox">
+                        <input type="checkbox"> 記住我
+                    </div>
+                </div>
+                <div class="pwd">
+                    <span>密碼</span>
+                    <br>
+                    <input type="text" />
+                    <br>
+                    <div class="forget">
+                        <a href="https://zh-tw.facebook.com/recover/initiate?lwv=110">忘記密碼？</a>
+                    </div>
+                </div>
+                <div class="login">
+                    <button>登入</button>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="main">
+            <table height="600px" border="0px" width="100%">
+                <tr>
+                    <td class="description" width="59%" rowspan="6">
+                        <br>Facebook，讓你和親朋好友保持聯繫，隨時分
+                        <br>享生活中的每一刻。
+                        <img width="537px" height="195px" src="images/network.png" alt=""></td>
+                    <td class="register vtop">註冊
+                        <br><span style="display:inline-block;font-size:20px; font-weight:normal ;margin-bottom:20px;">完全並永遠免費！</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-6 input-lg">
+                            <input type="text" class="form-control" id="firstname" placeholder="姓氏">
+                        </div>
+                        <div class="form-group col-md-5 input-lg">
+                            <input type="text" class="form-control" id="lastname" placeholder="名字">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-11 input-lg">
+                            <input type="text" class="form-control" id="firstname" placeholder="電子郵件地址或手機號碼">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-11 input-lg">
+                            <input type="text" class="form-control" id="firstname" placeholder="重新輸入電子郵件地址或手機號碼">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-11 input-lg">
+                            <input type="text" class="form-control" id="firstname" placeholder="新密碼">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="vtop">
+                        <span style="font-size:20px;">生日</span>
+                        <br>
+                        <div class="col-md-2">
+                            <select name="年" id="year" class="form-control ">
+                                <option value="year">年</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select name="月" id="month" class="form-control ">
+                                <option value="month">月</option>
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select name="日" id="day" class="form-control ">
+                                <option value="day">日</option>
+                                <option value="31">31</option>
+                                <option value="30">30</option>
+                                <option value="29">29</option>
+                            </select>
+                        </div>
+                        <br>
+                        <a href="">為什麼需要提供我的生日?</a>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender">女性</label>
+                            &nbsp;&nbsp;
+                            <label>
+                                <input type="radio" name="gender">男性</label>
+                        </div>
+                        <span style="color:#777777;">一旦點擊註冊，即表示你同意使用條款，而且你也閱讀了資</span>
+                        <br><span style="color:#777777;">料政策，包括 Cookie 的使用。</span>
+                        <br />
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-success col-md-6">註冊</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="fanspage">
+                            為名人、團體或公司企業
+                            <a href="">建立粉絲專頁</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="bottom">
+            <div class="lan">
+                <ul>
+                    <li><a href="">中文(台灣)</a></li>
+                    <li>
+                        <a href="">English (US)</a></li>
+                    <li>
+                        <a href="">Bahasa</a></li>
+                    <li>
+                        <a href="">IndonesiaTiếng</a></li>
+                    <li>
+                        <a href="">Việtภาษาไทย</a>
+                    </li>
+                    <li><a href="">日本語</a></li>
+                    <li><a href="">Español</a></li>
+                    <li><a href="">Português(Brasil)</a></li>
+                    <li><a href="">Français(France)</a></li>
+                    <li><a href="">Deutsch</a></li>
+                    <li class="otherlan"><a href="">......</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- display:inline-block切欄 -->
+        <div>
+            <table id="footer1" border="1px;" height="100px" width="720px">
+                <tr>
+                    <td><a href="">註冊</a></td>
+                    <td><a href="">登入</a></td>
+                    <td><a href="">Messenger</a></td>
+                    <td><a href="">Facebook Lite</a></td>
+                    <td><a href="">行動版</a></td>
+                    <td><a href="">尋找朋友</a></td>
+                    <td><a href="">名片貼</a></td>
+                    <td><a href="">用戶</a></td>
+                    <td><a href="">粉絲專頁</a></td>
+                    <td><a href="">地標</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">遊戲</a></td>
+                    <td><a href="">地點</a></td>
+                    <td><a href="">關於</a></td>
+                    <td><a href="">刊登廣告</a></td>
+                    <td><a href="">建立粉絲專頁</a></td>
+                    <td><a href="">開發人員</a></td>
+                    <td><a href="">工作機會</a></td>
+                    <td><a href="">隱私政策</a></td>
+                    <td><a href="">Cookie</a></td>
+                    <td><a href="">廣告選擇</a></td>
+                </tr>
+                <tr>
+                    <td><a href="">使用條款</a></td>
+                    <td><a href="">使用說明</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="color:#737373;">
+                        Facebook © 2015
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="">中文(台灣)</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
