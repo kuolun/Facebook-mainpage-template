@@ -78,11 +78,34 @@
         margin-right: 5px;
     }
     
-    .login {
-        background-color: #3A5795;
+    .loginBtn {
         display: inline-block;
         vertical-align: top;
         margin-top: 31px;
+    }
+    
+    .loginBtn button {
+        background-color: #5b74a8;
+        border: 1px solid;
+        border-color: #2f477a #29447e #1a356e;
+        padding: 1px 5px 3px 5px;
+        font-weight: bold;
+        color: #fff;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    }
+    
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+    
+    .myButton:hover {
+        background-color: #5cbf2a;
+    }
+    
+    .myButton:active {
+        position: relative;
+        top: 1px;
     }
     
     a:link {
@@ -199,6 +222,27 @@
     #footer1 td {
         padding: 2px 6px 5px 0;
     }
+    
+    #footer {
+        border-top: 1px solid #a0a9c0;
+    }
+    
+    #footer1 {
+        margin-top: 10px;
+        padding-top: 8px;
+    }
+    
+    .col-md-1 {
+        width: 50px;
+        padding: 0;
+        position: relative;
+        top: 2px;
+    }
+    
+    .copyright {
+        color: #737373;
+        margin: 15px 0 15px 0;
+    }
     </style>
 </head>
 
@@ -229,7 +273,7 @@
                         <a href="https://zh-tw.facebook.com/recover/initiate?lwv=110">忘記密碼？</a>
                     </div>
                 </div>
-                <div class="login">
+                <div class="loginBtn">
                     <button>登入</button>
                 </div>
             </div>
@@ -242,38 +286,39 @@
                         <br>Facebook，讓你和親朋好友保持聯繫，隨時分
                         <br>享生活中的每一刻。
                         <img width="537px" height="195px" src="images/network.png" alt=""></td>
-                    <td class="register vtop">註冊
-                        <br><span style="display:inline-block;font-size:20px; font-weight:normal ;margin-bottom:20px;">完全並永遠免費！</span>
+                    <td class="register vtop">
+                        <div>註冊</div>
+                        <div style="font-size:20px; font-weight:normal ;margin-bottom:0px;">完全並永遠免費！</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="form-group col-md-6 input-lg">
-                            <input type="text" class="form-control" id="firstname" placeholder="姓氏">
+                        <div class="form-group col-md-6 ">
+                            <input type="text" class="form-control input-lg" id="firstname" placeholder="姓氏">
                         </div>
-                        <div class="form-group col-md-5 input-lg">
-                            <input type="text" class="form-control" id="lastname" placeholder="名字">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="form-group col-md-11 input-lg">
-                            <input type="text" class="form-control" id="firstname" placeholder="電子郵件地址或手機號碼">
+                        <div class="form-group col-md-5 ">
+                            <input type="text" class="form-control input-lg" id="lastname" placeholder="名字">
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="form-group col-md-11 input-lg">
-                            <input type="text" class="form-control" id="firstname" placeholder="重新輸入電子郵件地址或手機號碼">
+                        <div class="form-group col-md-11 ">
+                            <input type="text" class="form-control input-lg" id="firstname" placeholder="電子郵件地址或手機號碼">
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="form-group col-md-11 input-lg">
-                            <input type="text" class="form-control" id="firstname" placeholder="新密碼">
+                        <div class="form-group col-md-11">
+                            <input type="text" class="form-control input-lg" id="firstname" placeholder="重新輸入電子郵件地址或手機號碼">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group col-md-11    ">
+                            <input type="text" class="form-control input-lg" id="firstname" placeholder="新密碼">
                         </div>
                     </td>
                 </tr>
@@ -297,7 +342,7 @@
                                 <option value="10">10</option>
                             </select>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             <select name="日" id="day" class="form-control ">
                                 <option value="day">日</option>
                                 <option value="31">31</option>
@@ -354,8 +399,8 @@
             </div>
         </div>
         <!-- display:inline-block切欄 -->
-        <div>
-            <table id="footer1" border="1px;" height="100px" width="720px">
+        <div id="footer">
+            <table id="footer1" border="0px" height="80px" width="820px">
                 <tr>
                     <td><a href="">註冊</a></td>
                     <td><a href="">登入</a></td>
@@ -384,21 +429,12 @@
                     <td><a href="">使用條款</a></td>
                     <td><a href="">使用說明</a></td>
                 </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td style="color:#737373;">
-                        Facebook © 2015
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="">中文(台灣)</a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
             </table>
+            <div class="copyright">
+                Facebook © 2015
+                <br>
+                <a href="">中文(台灣) </a>
+            </div>
         </div>
     </div>
 </body>
